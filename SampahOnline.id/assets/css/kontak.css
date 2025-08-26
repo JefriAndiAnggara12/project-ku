@@ -1,0 +1,119 @@
+/* === KONTAK PAGE FINAL === */
+
+.kontak-section {
+  background: url("../images/mobilpickup.png") no-repeat center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.kontak-overlay {
+  background: rgba(0, 0, 0, 0.4); /* overlay hitam tipis */
+  width: 100%;
+  padding: 80px 20px;
+}
+
+.kontak-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.6); /* box form hitam transparan */
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #fff;
+}
+
+.kontak-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.kontak-container form input,
+.kontak-container form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  color: #333;
+}
+
+.kontak-container form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.kirim-button {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.kirim-button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+#successMessage {
+  margin-top: 15px;
+  color: #00ff99;
+  font-weight: bold;
+}
+
+/* === WhatsApp Floating Button === */
+.wa-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 1.8rem;
+  padding: 12px 14px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 999;
+}
+
+.wa-floating:hover {
+  background: #1ebe57;
+  transform: scale(1.1);
+}
+
+.wa-floating i {
+  display: block;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .kontak-container {
+    padding: 30px 20px;
+  }
+
+  .kontak-container h2 {
+    font-size: 1.6rem;
+  }
+}
+.success {
+  color: green;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}

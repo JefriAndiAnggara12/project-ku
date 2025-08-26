@@ -1,0 +1,179 @@
+/* === MITRA PAGE FINAL === */
+
+/* Hero Section */
+.mitra-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/tongsampah.png") no-repeat center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px 80px;
+}
+
+.mitra-hero-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.mitra-hero-content p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+/* Mitra Section Cards */
+.mitra-section {
+  background: #f5f7fa;
+  padding: 80px 20px;
+}
+
+.mitra-section-overlay {
+  background: rgba(0, 0, 0, 0.7); /* Hitam transparan */
+  background-image: url("../images/2-petugas-samp.png");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.mitra-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.mitra-card {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.mitra-card:hover {
+  transform: translateY(-5px);
+}
+
+.mitra-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.mitra-card h3 {
+  font-size: 1.3rem;
+  color: #00baff;
+  margin: 15px 0 10px;
+}
+
+.mitra-card p {
+  font-size: 1rem;
+  color: #f0f0f0;
+  padding: 0 15px;
+}
+
+/* Apa Itu Mitra Transporter Section */
+.mitra-info-section {
+  background: #f5f7fa;
+  padding: 80px 20px;
+}
+
+.mitra-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mitra-info-text {
+  flex: 1 1 500px;
+  color: #fff;
+  padding: 40px 30px;
+}
+
+.mitra-info-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #00baff;
+}
+
+.mitra-info-text p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.mitra-info-text ul {
+  padding-left: 20px;
+}
+
+.mitra-info-text ul li {
+  list-style: disc;
+  margin-bottom: 8px;
+}
+
+.mitra-info-image {
+  flex: 1 1 400px;
+}
+
+.mitra-info-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mitra-hero {
+    padding: 80px 15px 60px;
+  }
+
+  .mitra-hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .mitra-hero-content p {
+    font-size: 1rem;
+  }
+
+  .mitra-section {
+    padding: 60px 15px;
+  }
+
+  .mitra-section-overlay {
+    padding: 40px 15px;
+  }
+
+  .mitra-card img {
+    height: 180px;
+  }
+
+  .mitra-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .mitra-card p {
+    font-size: 0.95rem;
+  }
+
+  .mitra-info-container {
+    flex-direction: column;
+  }
+
+  .mitra-info-text {
+    padding: 30px 20px;
+  }
+
+  .mitra-info-image img {
+    height: auto;
+  }
+}
